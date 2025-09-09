@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotBuddy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <button class="new-chat-btn" onclick="chatManager.createNewChat()">
+                <i class="fas fa-plus"></i> New Chat
+            </button>
+            <div class="chat-history" id="chat-history"></div>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="main-chat">
+            <!-- Inside <div class="main-chat"> -->
+            <div class="chat-header">
+                <h1>BotBuddy</h1>
+            </div>
+            <div class="messages" id="chat-box"></div>
+            
+            <div class="input-area">
+                <input type="text" id="user-input" 
+                       placeholder="Type your message..." 
+                       autocomplete="off">
+                <button id="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            <div class="typing-indicator" id="typing-indicator">
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

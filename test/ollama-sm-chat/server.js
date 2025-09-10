@@ -13,7 +13,7 @@ app.post('/chat', async (req, res) => {
 
     try {
         const response = await axios.post('http://localhost:11434/api/generate', {
-            model: 'deepseek-r1:7b',
+            model: 'deepseek-r1:1.5b',
             prompt: userMessage,
             stream: false,
         });
